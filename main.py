@@ -217,29 +217,33 @@ def format_telegram_message(data):
     otp = extract_otp(message)
     masked_num = mask_phone_number(num)
     
-    telegram_msg = f"""✨    <b>NEW  OTP   RECEIVED</b>    ✨
+    telegram_msg = f"""✨    <b>NEW  OTP   RECEIVED</b>    ✨ 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🕐 <b>Time:</b> <code>{dt}</code>
-
+🕐 <b>Time:</b> {dt}
 {flag} <b>Country:</b> {country}
-
 🟢 <b>Service:</b> {service}
-
-📞 <b>Number:</b> <code>+{masked_num}</code>
-
-🔑 <b>OTP:</b> <code>{otp}</code>
+📞 <b>Number:</b> +{masked_num}
+🔑 <b>OTP:</b> {otp}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📧 <b>Full Message:</b>
 
-<pre>{message}</pre>
+{message}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-<b>Powered By Power Modz</b>"""
+<b>Powered By Power Modz</b>
+
+━━━━━ <b>TELEGRAM</b> ━━━━━
+https://t.me/dp_numbers
+━━━━━━━━━━━━━━━━━━━
+
+━━━━━ <b>WHATSAPP</b> ━━━━━
+https://whatsapp.com/channel/0029Vb6oQ4CIN9ip6RfTmT0c
+━━━━━━━━━━━━━━━━━━━"""
     
     return telegram_msg, otp
 
