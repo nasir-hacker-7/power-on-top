@@ -1,0 +1,424 @@
+🚂 RAILWAY.APP DEPLOYMENT GUIDE
+================================
+Complete Step-by-Step Tutorial
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ WHY RAILWAY.APP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ FREE $5 credit every month (enough for this bot)
+✅ 24/7 uptime - no need to keep phone on
+✅ USA/Europe servers - NO Telegram restrictions
+✅ NO proxy needed
+✅ Automatic restarts if bot crashes
+✅ Easy deployment with GitHub
+✅ Professional logs and monitoring
+✅ No battery drain on your phone
+✅ Faster and more reliable
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. GitHub account (free)
+2. Railway.app account (free)
+3. Your bot files (already ready!)
+4. 10 minutes of time
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 STEP-BY-STEP DEPLOYMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: CREATE GITHUB ACCOUNT (if you don't have)
+--------------------------------------------------
+1. Go to https://github.com
+2. Click "Sign up"
+3. Create account (free)
+4. Verify email
+
+
+STEP 2: CREATE NEW REPOSITORY
+------------------------------
+1. Login to GitHub
+2. Click green "New" button (top left)
+3. Repository name: otp-telegram-bot
+4. Description: OTP Telegram Bot
+5. Choose: Public
+6. ✅ Add a README file
+7. Click "Create repository"
+
+
+STEP 3: UPLOAD BOT FILES TO GITHUB
+-----------------------------------
+
+Option A: Web Upload (Easiest)
+-------------------------------
+1. Open your repository
+2. Click "Add file" → "Upload files"
+3. Upload these files:
+   - main.py
+   - requirements.txt
+   - Procfile
+   - railway.json
+   - .gitignore
+4. Write commit message: "Initial commit"
+5. Click "Commit changes"
+
+Option B: Git Command Line
+---------------------------
+git clone https://github.com/YOUR_USERNAME/otp-telegram-bot.git
+cd otp-telegram-bot
+# Copy all files here
+git add .
+git commit -m "Initial commit"
+git push
+
+
+STEP 4: CREATE RAILWAY ACCOUNT
+-------------------------------
+1. Go to https://railway.app
+2. Click "Login"
+3. Sign in with GitHub (recommended)
+4. Allow permissions
+5. ✅ Account created!
+
+
+STEP 5: DEPLOY TO RAILWAY
+--------------------------
+1. Click "New Project"
+2. Choose "Deploy from GitHub repo"
+3. Select: otp-telegram-bot
+4. Railway will automatically detect Python
+5. Click "Deploy Now"
+6. Wait 1-2 minutes for deployment
+
+
+STEP 6: SET ENVIRONMENT VARIABLES
+----------------------------------
+This is IMPORTANT! Your bot needs these settings:
+
+1. In Railway dashboard, click your project
+2. Go to "Variables" tab
+3. Click "New Variable"
+4. Add these one by one:
+
+Variable Name: API_TOKEN
+Value: RVBXRjRSQouDZnhDQZBYSWdqj2tZlWp7VnFUf3hSdVeEjXV1gGeP
+
+Variable Name: TELEGRAM_BOT_TOKEN
+Value: 8430484880:AAEDwu_Rf6-E25d4DdCSOYTqvEhcoCf8ga0
+
+Variable Name: TELEGRAM_CHANNEL_ID
+Value: -1003852492977
+
+Variable Name: API_URL
+Value: http://51.77.216.195/crapi/dgroup/viewstats
+
+Variable Name: CHECK_INTERVAL
+Value: 15
+
+5. Click "Add" for each variable
+
+
+STEP 7: REDEPLOY (Important!)
+------------------------------
+1. After adding variables, go to "Deployments" tab
+2. Click the three dots (⋮) on latest deployment
+3. Click "Redeploy"
+4. Wait 1-2 minutes
+
+
+STEP 8: CHECK LOGS
+------------------
+1. Go to "Deployments" tab
+2. Click on latest deployment
+3. Click "View Logs"
+4. You should see:
+
+   🚀 OTP TELEGRAM BOT - RAILWAY DEPLOYMENT
+   ============================================================
+   📡 Checking API every 15 seconds...
+   ✅ Bot connected: @YourBotName
+   📥 Fetched X records from API
+   ✅ Message sent successfully!
+
+5. ✅ Bot is LIVE!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 MONITORING & MANAGEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+View Logs:
+----------
+Railway Dashboard → Deployments → View Logs
+
+Check Status:
+-------------
+Railway Dashboard → Shows "Active" or "Crashed"
+
+Restart Bot:
+------------
+Deployments → Three dots (⋮) → Redeploy
+
+Stop Bot:
+---------
+Settings → Danger Zone → Delete Service
+(Don't worry, repo stays on GitHub)
+
+Update Bot:
+-----------
+1. Edit files on GitHub
+2. Commit changes
+3. Railway auto-deploys new version!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💰 PRICING & CREDITS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Free Tier:
+----------
+✅ $5 credit per month (FREE)
+✅ 500 hours execution time
+✅ Shared CPU
+✅ 512MB RAM
+✅ More than enough for this bot!
+
+Your Bot Usage:
+---------------
+- Runs 24/7 = 720 hours/month
+- But uses minimal resources
+- Typically costs ~$2-3/month
+- FREE $5 credit covers it!
+
+Pro Tier (optional):
+--------------------
+- $5/month for more resources
+- Only if you scale up
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: Bot shows "Crashed"
+Solution:
+1. Check logs for error messages
+2. Verify environment variables are set
+3. Redeploy
+
+Problem: Not sending messages
+Solution:
+1. Check Telegram bot token is correct
+2. Bot is admin in channel?
+3. Channel ID is correct?
+4. Check logs
+
+Problem: "Build failed"
+Solution:
+1. Make sure requirements.txt is uploaded
+2. Make sure Procfile is uploaded
+3. Check file names (case-sensitive)
+
+Problem: Variables not working
+Solution:
+1. Make sure variable names are EXACT
+2. No extra spaces
+3. Redeploy after adding variables
+
+Problem: Running out of credits
+Solution:
+1. Check usage in Railway dashboard
+2. Increase CHECK_INTERVAL to 30 seconds
+3. Or upgrade to Pro tier
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 FILES EXPLAINED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+main.py
+--------
+- Main bot code
+- Optimized for Railway
+- Uses environment variables
+- Auto-restart on errors
+
+requirements.txt
+----------------
+- Python packages needed
+- Railway installs these automatically
+
+Procfile
+--------
+- Tells Railway how to run bot
+- "worker" means background process
+
+railway.json
+------------
+- Railway configuration
+- Auto-restart settings
+- Build settings
+
+.gitignore
+----------
+- Files to ignore in Git
+- Keeps repo clean
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 UPDATING YOUR BOT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Method 1: Edit on GitHub
+-------------------------
+1. Go to your repo on GitHub
+2. Click on file (e.g., main.py)
+3. Click pencil icon (Edit)
+4. Make changes
+5. Click "Commit changes"
+6. Railway auto-deploys in 1-2 minutes!
+
+Method 2: Local Git
+-------------------
+git pull
+# Edit files locally
+git add .
+git commit -m "Update bot"
+git push
+# Railway auto-deploys
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 PRO TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Enable Notifications
+   Railway → Project Settings → Enable email notifications
+   Get alerts if bot crashes
+
+2. Add Health Check
+   Bot already has health_check() function
+   Verifies Telegram connection on startup
+
+3. Monitor Logs Regularly
+   Check logs once daily
+   Catch errors early
+
+4. Backup Your Code
+   GitHub = automatic backup
+   Always have latest version
+
+5. Test Locally First
+   Before pushing to Railway:
+   python main.py
+   Test on your computer
+
+6. Use Descriptive Commits
+   Instead of: "update"
+   Use: "Fixed OTP extraction bug"
+
+7. Keep Secrets Secret
+   Never hardcode tokens in main.py
+   Always use environment variables
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🆚 RAILWAY vs TERMUX
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Feature          | Termux | Railway
+-----------------|--------|----------
+Cost             | Free   | Free ($5 credit)
+24/7 Uptime      | ❌ No  | ✅ Yes
+Phone Required   | ✅ Yes | ❌ No
+Battery Drain    | ✅ Yes | ❌ No
+Telegram Blocks  | ✅ Yes | ❌ No
+Proxy Needed     | ✅ Yes | ❌ No
+Auto Restart     | Manual | ✅ Auto
+Logs/Monitoring  | Basic  | ✅ Pro
+Speed            | Slow   | ✅ Fast
+Reliability      | Medium | ✅ High
+
+Winner: RAILWAY! 🏆
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ FINAL CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Before Deployment:
+□ GitHub account created
+□ Repository created
+□ All 5 files uploaded
+□ Railway account created
+
+During Deployment:
+□ Project created on Railway
+□ GitHub repo connected
+□ All 5 environment variables set
+□ Redeployed after variables
+
+After Deployment:
+□ Logs show "Bot connected"
+□ Test OTP received in channel
+□ No error messages in logs
+□ Status shows "Active"
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 SUCCESS!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your bot is now:
+✅ Running 24/7 on cloud
+✅ No Telegram restrictions
+✅ No phone battery drain
+✅ Auto-restart on crashes
+✅ Professional monitoring
+✅ FREE (with $5 credit)
+
+Enjoy your fully automated OTP bot!
+
+Powered By Power Modz 💪
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🆘 NEED HELP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Check Railway logs first
+2. Verify all environment variables
+3. Test bot token: https://api.telegram.org/botTOKEN/getMe
+4. Make sure bot is admin in channel
+5. Check GitHub files are uploaded correctly
+
+Common Issues:
+- "Crashed" = Missing environment variables
+- "Not sending" = Wrong channel ID or bot not admin
+- "Build failed" = Missing files (Procfile/requirements.txt)
+
+
+Alternative Free Platforms (if Railway doesn't work):
+- Render.com (also free tier)
+- Fly.io (free tier)
+- Heroku (paid now)
+- Replit (free but less reliable)
+
+Railway is BEST for this use case!
